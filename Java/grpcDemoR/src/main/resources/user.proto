@@ -5,7 +5,7 @@ package javas;
 
 service user{
     
-    rpc getUse(Empty) returns (UserInfo); 
+    rpc get(Empty) returns (UserInfo); 
 
 }
 
