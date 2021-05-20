@@ -15,7 +15,7 @@ public final class User {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface UserInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UserInfo)
+      // @@protoc_insertion_point(interface_extends:javas.UserInfo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -59,11 +59,11 @@ public final class User {
         getPhoneBytes();
   }
   /**
-   * Protobuf type {@code UserInfo}
+   * Protobuf type {@code javas.UserInfo}
    */
   public  static final class UserInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UserInfo)
+      // @@protoc_insertion_point(message_implements:javas.UserInfo)
       UserInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use UserInfo.newBuilder() to construct.
@@ -146,13 +146,13 @@ public final class User {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.rod.grpc.User.internal_static_UserInfo_descriptor;
+      return com.rod.grpc.User.internal_static_javas_UserInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.rod.grpc.User.internal_static_UserInfo_fieldAccessorTable
+      return com.rod.grpc.User.internal_static_javas_UserInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.rod.grpc.User.UserInfo.class, com.rod.grpc.User.UserInfo.Builder.class);
     }
@@ -479,21 +479,21 @@ public final class User {
       return builder;
     }
     /**
-     * Protobuf type {@code UserInfo}
+     * Protobuf type {@code javas.UserInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UserInfo)
+        // @@protoc_insertion_point(builder_implements:javas.UserInfo)
         com.rod.grpc.User.UserInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.rod.grpc.User.internal_static_UserInfo_descriptor;
+        return com.rod.grpc.User.internal_static_javas_UserInfo_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.rod.grpc.User.internal_static_UserInfo_fieldAccessorTable
+        return com.rod.grpc.User.internal_static_javas_UserInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.rod.grpc.User.UserInfo.class, com.rod.grpc.User.UserInfo.Builder.class);
       }
@@ -530,7 +530,7 @@ public final class User {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.rod.grpc.User.internal_static_UserInfo_descriptor;
+        return com.rod.grpc.User.internal_static_javas_UserInfo_descriptor;
       }
 
       @java.lang.Override
@@ -935,10 +935,10 @@ public final class User {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UserInfo)
+      // @@protoc_insertion_point(builder_scope:javas.UserInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:UserInfo)
+    // @@protoc_insertion_point(class_scope:javas.UserInfo)
     private static final com.rod.grpc.User.UserInfo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.rod.grpc.User.UserInfo();
@@ -976,15 +976,15 @@ public final class User {
   }
 
   public interface EmptyOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Empty)
+      // @@protoc_insertion_point(interface_extends:javas.Empty)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code Empty}
+   * Protobuf type {@code javas.Empty}
    */
   public  static final class Empty extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Empty)
+      // @@protoc_insertion_point(message_implements:javas.Empty)
       EmptyOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Empty.newBuilder() to construct.
@@ -1038,13 +1038,13 @@ public final class User {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.rod.grpc.User.internal_static_Empty_descriptor;
+      return com.rod.grpc.User.internal_static_javas_Empty_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.rod.grpc.User.internal_static_Empty_fieldAccessorTable
+      return com.rod.grpc.User.internal_static_javas_Empty_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.rod.grpc.User.Empty.class, com.rod.grpc.User.Empty.Builder.class);
     }
@@ -1195,21 +1195,21 @@ public final class User {
       return builder;
     }
     /**
-     * Protobuf type {@code Empty}
+     * Protobuf type {@code javas.Empty}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Empty)
+        // @@protoc_insertion_point(builder_implements:javas.Empty)
         com.rod.grpc.User.EmptyOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.rod.grpc.User.internal_static_Empty_descriptor;
+        return com.rod.grpc.User.internal_static_javas_Empty_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.rod.grpc.User.internal_static_Empty_fieldAccessorTable
+        return com.rod.grpc.User.internal_static_javas_Empty_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.rod.grpc.User.Empty.class, com.rod.grpc.User.Empty.Builder.class);
       }
@@ -1238,7 +1238,7 @@ public final class User {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.rod.grpc.User.internal_static_Empty_descriptor;
+        return com.rod.grpc.User.internal_static_javas_Empty_descriptor;
       }
 
       @java.lang.Override
@@ -1347,10 +1347,10 @@ public final class User {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Empty)
+      // @@protoc_insertion_point(builder_scope:javas.Empty)
     }
 
-    // @@protoc_insertion_point(class_scope:Empty)
+    // @@protoc_insertion_point(class_scope:javas.Empty)
     private static final com.rod.grpc.User.Empty DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.rod.grpc.User.Empty();
@@ -1388,15 +1388,15 @@ public final class User {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UserInfo_descriptor;
+    internal_static_javas_UserInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UserInfo_fieldAccessorTable;
+      internal_static_javas_UserInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Empty_descriptor;
+    internal_static_javas_Empty_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Empty_fieldAccessorTable;
+      internal_static_javas_Empty_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1406,10 +1406,11 @@ public final class User {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\nuser.proto\"D\n\010UserInfo\022\014\n\004name\030\001 \001(\t\022\014" +
-      "\n\004last\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\022\r\n\005phone\030\004 \001" +
-      "(\t\"\007\n\005Empty2$\n\004user\022\034\n\007GetUser\022\006.Empty\032\t" +
-      ".UserInfoB\016\n\014com.rod.grpcb\006proto3"
+      "\n\nuser.proto\022\005javas\"D\n\010UserInfo\022\014\n\004name\030" +
+      "\001 \001(\t\022\014\n\004last\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\022\r\n\005ph" +
+      "one\030\004 \001(\t\"\007\n\005Empty2,\n\004user\022$\n\003get\022\014.java" +
+      "s.Empty\032\017.javas.UserInfoB\016\n\014com.rod.grpc" +
+      "b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1423,17 +1424,17 @@ public final class User {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_UserInfo_descriptor =
+    internal_static_javas_UserInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_UserInfo_fieldAccessorTable = new
+    internal_static_javas_UserInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UserInfo_descriptor,
+        internal_static_javas_UserInfo_descriptor,
         new java.lang.String[] { "Name", "Last", "Email", "Phone", });
-    internal_static_Empty_descriptor =
+    internal_static_javas_Empty_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_Empty_fieldAccessorTable = new
+    internal_static_javas_Empty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Empty_descriptor,
+        internal_static_javas_Empty_descriptor,
         new java.lang.String[] { });
   }
 

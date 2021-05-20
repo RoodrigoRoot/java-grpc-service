@@ -19,7 +19,7 @@ public class GrpcClient {
 		
 		userBlockingStub userStub = userGrpc.newBlockingStub(channel);
 		Empty emptyrequest = Empty.newBuilder().build();
-		UserInfo response =  userStub.getUser(emptyrequest);
+		UserInfo response =  userStub.get(emptyrequest);
 		System.out.println(response);
 		
 		

@@ -24,39 +24,39 @@ public final class userGrpc {
 
   private userGrpc() {}
 
-  public static final String SERVICE_NAME = "user";
+  public static final String SERVICE_NAME = "javas.user";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.rod.grpc.User.Empty,
-      com.rod.grpc.User.UserInfo> getGetUserMethod;
+      com.rod.grpc.User.UserInfo> getGetMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetUser",
+      fullMethodName = SERVICE_NAME + '/' + "get",
       requestType = com.rod.grpc.User.Empty.class,
       responseType = com.rod.grpc.User.UserInfo.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.rod.grpc.User.Empty,
-      com.rod.grpc.User.UserInfo> getGetUserMethod() {
-    io.grpc.MethodDescriptor<com.rod.grpc.User.Empty, com.rod.grpc.User.UserInfo> getGetUserMethod;
-    if ((getGetUserMethod = userGrpc.getGetUserMethod) == null) {
+      com.rod.grpc.User.UserInfo> getGetMethod() {
+    io.grpc.MethodDescriptor<com.rod.grpc.User.Empty, com.rod.grpc.User.UserInfo> getGetMethod;
+    if ((getGetMethod = userGrpc.getGetMethod) == null) {
       synchronized (userGrpc.class) {
-        if ((getGetUserMethod = userGrpc.getGetUserMethod) == null) {
-          userGrpc.getGetUserMethod = getGetUserMethod = 
+        if ((getGetMethod = userGrpc.getGetMethod) == null) {
+          userGrpc.getGetMethod = getGetMethod = 
               io.grpc.MethodDescriptor.<com.rod.grpc.User.Empty, com.rod.grpc.User.UserInfo>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "user", "GetUser"))
+                  "javas.user", "get"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.rod.grpc.User.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.rod.grpc.User.UserInfo.getDefaultInstance()))
-                  .setSchemaDescriptor(new userMethodDescriptorSupplier("GetUser"))
+                  .setSchemaDescriptor(new userMethodDescriptorSupplier("get"))
                   .build();
           }
         }
      }
-     return getGetUserMethod;
+     return getGetMethod;
   }
 
   /**
@@ -88,20 +88,20 @@ public final class userGrpc {
 
     /**
      */
-    public void getUser(com.rod.grpc.User.Empty request,
+    public void get(com.rod.grpc.User.Empty request,
         io.grpc.stub.StreamObserver<com.rod.grpc.User.UserInfo> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetUserMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getGetUserMethod(),
+            getGetMethod(),
             asyncUnaryCall(
               new MethodHandlers<
                 com.rod.grpc.User.Empty,
                 com.rod.grpc.User.UserInfo>(
-                  this, METHODID_GET_USER)))
+                  this, METHODID_GET)))
           .build();
     }
   }
@@ -126,10 +126,10 @@ public final class userGrpc {
 
     /**
      */
-    public void getUser(com.rod.grpc.User.Empty request,
+    public void get(com.rod.grpc.User.Empty request,
         io.grpc.stub.StreamObserver<com.rod.grpc.User.UserInfo> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetUserMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGetMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -153,9 +153,9 @@ public final class userGrpc {
 
     /**
      */
-    public com.rod.grpc.User.UserInfo getUser(com.rod.grpc.User.Empty request) {
+    public com.rod.grpc.User.UserInfo get(com.rod.grpc.User.Empty request) {
       return blockingUnaryCall(
-          getChannel(), getGetUserMethod(), getCallOptions(), request);
+          getChannel(), getGetMethod(), getCallOptions(), request);
     }
   }
 
@@ -179,14 +179,14 @@ public final class userGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.rod.grpc.User.UserInfo> getUser(
+    public com.google.common.util.concurrent.ListenableFuture<com.rod.grpc.User.UserInfo> get(
         com.rod.grpc.User.Empty request) {
       return futureUnaryCall(
-          getChannel().newCall(getGetUserMethod(), getCallOptions()), request);
+          getChannel().newCall(getGetMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_GET_USER = 0;
+  private static final int METHODID_GET = 0;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -205,8 +205,8 @@ public final class userGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GET_USER:
-          serviceImpl.getUser((com.rod.grpc.User.Empty) request,
+        case METHODID_GET:
+          serviceImpl.get((com.rod.grpc.User.Empty) request,
               (io.grpc.stub.StreamObserver<com.rod.grpc.User.UserInfo>) responseObserver);
           break;
         default:
@@ -270,7 +270,7 @@ public final class userGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new userFileDescriptorSupplier())
-              .addMethod(getGetUserMethod())
+              .addMethod(getGetMethod())
               .build();
         }
       }
